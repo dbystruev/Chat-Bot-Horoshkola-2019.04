@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var questionField: UITextField!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
         let question = Message(isAnswer: false, timestamp: Date(), text: text)
         let answer = question.answer()
         messages += [question, answer]
+        sender.text = ""
         tableView.reloadData()
     }
 }

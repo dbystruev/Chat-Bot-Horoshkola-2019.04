@@ -16,8 +16,18 @@ struct Message {
     func answer() -> Message {
         var message = Message(isAnswer: true, timestamp: Date(), text: text)
         
-        if text.lowercased().contains("время") {
+        let question = message.text.lowercased()
+        
+        if question.contains("времени") {
+            message.text = "Спросите: «Который час?»"
+        }
+        
+        if question.contains("час") {
             message.text = "\(Date())"
+        }
+        
+        if question.contains("зовут") {
+            message.text = "Алиса"
         }
         
         return message

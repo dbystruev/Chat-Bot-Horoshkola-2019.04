@@ -120,6 +120,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomConstraint" destination="Oqh-I0-BEb" id="la0-uZ-1xJ"/>
                         <outlet property="questionField" destination="BD3-O0-GZm" id="tn6-QI-HtU"/>
                         <outlet property="tableView" destination="HIV-HX-bHc" id="2nn-0c-gkM"/>
                     </connections>
