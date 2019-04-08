@@ -30,6 +30,10 @@ struct Message {
             message.text = "Алиса"
         }
         
+        if let number = Int(question) {
+            message.text = "\(number + 1)"
+        }
+        
         return message
     }
     
