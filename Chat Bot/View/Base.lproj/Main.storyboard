@@ -22,44 +22,35 @@
                                 <rect key="frame" x="8" y="52" width="398" height="764"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AnswerCell" rowHeight="66" id="SbZ-Sd-2Uh" customClass="MessageCell" customModule="Chat_Bot" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="398" height="66"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AnswerCell" id="SbZ-Sd-2Uh" customClass="MessageCell" customModule="Chat_Bot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="398" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SbZ-Sd-2Uh" id="PGN-t1-U4K">
-                                            <rect key="frame" x="0.0" y="0.0" width="398" height="65.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date and Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unf-it-NqV">
-                                                    <rect key="frame" x="20" y="11" width="358" height="23.5"/>
+                                                    <rect key="frame" x="20" y="11" width="358" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Answer" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqz-Mq-c9C" customClass="RoundLabel" customModule="Chat_Bot" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="34.5" width="57" height="20.5"/>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Very very long answer how to very long answer very long answer" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqz-Mq-c9C" customClass="RoundLabel" customModule="Chat_Bot" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="11" width="328" height="22"/>
+                                                    <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksc-HX-TSs">
-                                                    <rect key="frame" x="77" y="34.5" width="301" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Ksc-HX-TSs" secondAttribute="trailing" id="A5O-HF-Jos"/>
                                                 <constraint firstItem="unf-it-NqV" firstAttribute="leading" secondItem="PGN-t1-U4K" secondAttribute="leadingMargin" id="AJT-jB-eg9"/>
                                                 <constraint firstItem="hqz-Mq-c9C" firstAttribute="bottom" secondItem="PGN-t1-U4K" secondAttribute="bottomMargin" id="TI3-id-25m"/>
-                                                <constraint firstItem="Ksc-HX-TSs" firstAttribute="bottom" secondItem="PGN-t1-U4K" secondAttribute="bottomMargin" id="glj-Zr-Kwr"/>
-                                                <constraint firstItem="Ksc-HX-TSs" firstAttribute="top" secondItem="unf-it-NqV" secondAttribute="bottom" id="oUG-Qr-oMk"/>
                                                 <constraint firstItem="hqz-Mq-c9C" firstAttribute="leading" secondItem="PGN-t1-U4K" secondAttribute="leadingMargin" id="oxA-VX-xpJ"/>
-                                                <constraint firstItem="Ksc-HX-TSs" firstAttribute="leading" secondItem="hqz-Mq-c9C" secondAttribute="trailing" id="s57-0c-rZd"/>
                                                 <constraint firstItem="unf-it-NqV" firstAttribute="top" secondItem="PGN-t1-U4K" secondAttribute="topMargin" id="sST-k4-za9"/>
                                                 <constraint firstItem="unf-it-NqV" firstAttribute="trailing" secondItem="PGN-t1-U4K" secondAttribute="trailingMargin" id="wFs-IL-0jR"/>
                                                 <constraint firstItem="hqz-Mq-c9C" firstAttribute="top" secondItem="unf-it-NqV" secondAttribute="bottom" id="wod-yF-2hs"/>
+                                                <constraint firstAttribute="trailing" secondItem="hqz-Mq-c9C" secondAttribute="trailing" constant="50" id="xWc-Vz-61c"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -67,27 +58,21 @@
                                             <outlet property="timestampLabel" destination="unf-it-NqV" id="kaU-cB-Uyo"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuestionCell" rowHeight="66" id="SVA-v5-yNa" customClass="MessageCell" customModule="Chat_Bot" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="94" width="398" height="66"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuestionCell" id="SVA-v5-yNa" customClass="MessageCell" customModule="Chat_Bot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="398" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SVA-v5-yNa" id="tjh-P7-VoU">
-                                            <rect key="frame" x="0.0" y="0.0" width="398" height="65.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date and Time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXg-oy-15h">
-                                                    <rect key="frame" x="20" y="11" width="358" height="23.5"/>
+                                                    <rect key="frame" x="20" y="11" width="358" height="1.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEq-BM-qxk">
-                                                    <rect key="frame" x="20" y="34.5" width="289" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Question" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mos-R7-B6a" customClass="RoundLabel" customModule="Chat_Bot" customModuleProvider="target">
-                                                    <rect key="frame" x="309" y="34.5" width="69" height="20.5"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Question" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mos-R7-B6a" customClass="RoundLabel" customModule="Chat_Bot" customModuleProvider="target">
+                                                    <rect key="frame" x="70" y="12.5" width="308" height="20.5"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -95,15 +80,12 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="gEq-BM-qxk" firstAttribute="leading" secondItem="tjh-P7-VoU" secondAttribute="leadingMargin" id="0yv-9U-prA"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Mos-R7-B6a" secondAttribute="trailing" id="4MH-u3-Q35"/>
                                                 <constraint firstItem="Mos-R7-B6a" firstAttribute="top" secondItem="TXg-oy-15h" secondAttribute="bottom" id="Dxn-QA-bQn"/>
-                                                <constraint firstItem="gEq-BM-qxk" firstAttribute="top" secondItem="TXg-oy-15h" secondAttribute="bottom" id="IHb-58-wJO"/>
+                                                <constraint firstItem="Mos-R7-B6a" firstAttribute="leading" secondItem="tjh-P7-VoU" secondAttribute="leadingMargin" constant="50" id="Gn8-x7-xr9"/>
                                                 <constraint firstItem="TXg-oy-15h" firstAttribute="trailing" secondItem="tjh-P7-VoU" secondAttribute="trailingMargin" id="LK2-U1-3v5"/>
                                                 <constraint firstItem="Mos-R7-B6a" firstAttribute="bottom" secondItem="tjh-P7-VoU" secondAttribute="bottomMargin" id="PKq-yl-pfI"/>
-                                                <constraint firstItem="Mos-R7-B6a" firstAttribute="leading" secondItem="gEq-BM-qxk" secondAttribute="trailing" id="aDE-RF-7Nh"/>
                                                 <constraint firstItem="TXg-oy-15h" firstAttribute="top" secondItem="tjh-P7-VoU" secondAttribute="topMargin" id="ggu-cz-oKr"/>
-                                                <constraint firstItem="gEq-BM-qxk" firstAttribute="bottom" secondItem="tjh-P7-VoU" secondAttribute="bottomMargin" id="omS-t8-UAj"/>
                                                 <constraint firstItem="TXg-oy-15h" firstAttribute="leading" secondItem="tjh-P7-VoU" secondAttribute="leadingMargin" id="qMn-ey-2eY"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -119,6 +101,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="questionAsked:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="8Mc-Xd-66r"/>
+                                    <action selector="questionAsked:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="gAL-54-prp"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -133,6 +119,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="questionField" destination="BD3-O0-GZm" id="tn6-QI-HtU"/>
+                        <outlet property="tableView" destination="HIV-HX-bHc" id="2nn-0c-gkM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

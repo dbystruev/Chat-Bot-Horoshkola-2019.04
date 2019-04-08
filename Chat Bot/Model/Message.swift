@@ -13,10 +13,15 @@ struct Message {
     let timestamp: Date
     let text: String
     
+    func answer() -> Message {
+        let message = Message(isAnswer: true, timestamp: Date(), text: text)
+        
+        return message
+    }
+    
     static func loadSample() -> [Message] {
         return [
             Message(isAnswer: true, timestamp: Date(), text: "Спрашивайте"),
-            Message(isAnswer: false, timestamp: Date(), text: "Отвечаем"),
         ]
     }
 }

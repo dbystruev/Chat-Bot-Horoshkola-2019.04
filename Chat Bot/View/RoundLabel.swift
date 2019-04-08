@@ -11,6 +11,11 @@ import UIKit
 @IBDesignable class RoundLabel: UILabel {
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        self.layer.cornerRadius = 5
+        layer.cornerRadius = 10
+    }
+    
+    override func drawText(in rect: CGRect) {
+        let insets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        super.drawText(in: rect.inset(by: insets))
     }
 }
