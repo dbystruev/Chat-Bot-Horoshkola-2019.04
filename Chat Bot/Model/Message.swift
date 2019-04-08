@@ -11,10 +11,14 @@ import Foundation
 struct Message {
     let isAnswer: Bool
     let timestamp: Date
-    let text: String
+    var text: String
     
     func answer() -> Message {
-        let message = Message(isAnswer: true, timestamp: Date(), text: text)
+        var message = Message(isAnswer: true, timestamp: Date(), text: text)
+        
+        if text.lowercased().contains("время") {
+            message.text = "\(Date())"
+        }
         
         return message
     }
