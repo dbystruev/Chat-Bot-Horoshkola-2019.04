@@ -12,6 +12,9 @@
 		69275D58225B1A7A004526EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69275D56225B1A7A004526EE /* Main.storyboard */; };
 		69275D5A225B1A7D004526EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69275D59225B1A7D004526EE /* Assets.xcassets */; };
 		69275D5D225B1A7D004526EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69275D5B225B1A7D004526EE /* LaunchScreen.storyboard */; };
+		69275D66225B1E9D004526EE /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69275D65225B1E9D004526EE /* RoundLabel.swift */; };
+		69275D6B225B1FB6004526EE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69275D6A225B1FB6004526EE /* Message.swift */; };
+		69275D6D225B207C004526EE /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69275D6C225B207C004526EE /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		69275D59225B1A7D004526EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69275D5C225B1A7D004526EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69275D5E225B1A7D004526EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69275D65225B1E9D004526EE /* RoundLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundLabel.swift; sourceTree = "<group>"; };
+		69275D6A225B1FB6004526EE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		69275D6C225B207C004526EE /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		69275D51225B1A7A004526EE /* Chat Bot */ = {
 			isa = PBXGroup;
 			children = (
-				69275D52225B1A7A004526EE /* AppDelegate.swift */,
-				69275D54225B1A7A004526EE /* ViewController.swift */,
+				69275D69225B1F9D004526EE /* Model */,
+				69275D64225B1E7C004526EE /* View */,
+				69275D67225B1F4F004526EE /* Controller */,
+				69275D68225B1F6B004526EE /* Supporting Files */,
+			);
+			path = "Chat Bot";
+			sourceTree = "<group>";
+		};
+		69275D64225B1E7C004526EE /* View */ = {
+			isa = PBXGroup;
+			children = (
 				69275D56225B1A7A004526EE /* Main.storyboard */,
+				69275D6C225B207C004526EE /* MessageCell.swift */,
+				69275D65225B1E9D004526EE /* RoundLabel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69275D67225B1F4F004526EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69275D54225B1A7A004526EE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69275D68225B1F6B004526EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69275D52225B1A7A004526EE /* AppDelegate.swift */,
 				69275D59225B1A7D004526EE /* Assets.xcassets */,
 				69275D5B225B1A7D004526EE /* LaunchScreen.storyboard */,
 				69275D5E225B1A7D004526EE /* Info.plist */,
 			);
-			path = "Chat Bot";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69275D69225B1F9D004526EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69275D6A225B1FB6004526EE /* Message.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				69275D55225B1A7A004526EE /* ViewController.swift in Sources */,
+				69275D6B225B1FB6004526EE /* Message.swift in Sources */,
+				69275D66225B1E9D004526EE /* RoundLabel.swift in Sources */,
 				69275D53225B1A7A004526EE /* AppDelegate.swift in Sources */,
+				69275D6D225B207C004526EE /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
-				INFOPLIST_FILE = "Chat Bot/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Chat Bot/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
-				INFOPLIST_FILE = "Chat Bot/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Chat Bot/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
